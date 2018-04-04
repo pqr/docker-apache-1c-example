@@ -2,8 +2,8 @@
 <point xmlns="http://v8.1c.ru/8.2/virtual-resource-system"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		base="/ForwardTransBuh"
-		ib="Srvr=Serv1C;Ref=ForwardTransBuh"
+		base="/BuhBase"
+		ib="Srvr=Serv1C;Ref=BuhBase"
 		enableStandardOData="true">
 	<ws publishExtensionsByDefault="true" />
 	<httpServices publishByDefault="true" publishExtensionsByDefault="true"/>
