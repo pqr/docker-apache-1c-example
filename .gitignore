@@ -1,2 +1,4 @@
 deb64.tar.gz
 .vagrant
+/ib/*
+/dist/*

@@ -17,4 +17,14 @@ RUN tar -xzf /dist/deb64.tar.gz -C /dist \
 COPY httpd.conf /usr/local/apache2/conf/httpd.conf
 
 # Копируем внутрь контейнера заранее подготовленный конфиг с настройками подключения к серверу 1С
-COPY default.vrd /usr/local/apache2/htdocs/BuhBase/default.vrd
+COPY default.vrd /usr/local/apache2/htdocs/base/default.vrd
+
+# Если не пробрасываем базу с хоста
+# Копируем базу в директорию base
+COPY /ib/ /var/www/base/
+
+# Копируем дистрибутивы для windows
+COPY /dist/ /var/www/dist/
+
+# Настраиваем права
+RUN chown -R root:daemon /var/www/ && chmod -R 777 /var/www/ *

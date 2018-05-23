@@ -2,8 +2,11 @@
 <point xmlns="http://v8.1c.ru/8.2/virtual-resource-system"
 		xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		base="/BuhBase"
-		ib="Srvr=Serv1C;Ref=BuhBase"
+		base="/base"
+		ib="File=&quot;/var/www/base/&quot;;"
+		pubdst="http://10.47.1.19/dist/client.zip"
+		pubdst32="http://10.47.1.19/dist/client.zip"
+		pubdst64="http://10.47.1.19/dist/client64.zip"
 		enableStandardOData="true">
 	<ws publishExtensionsByDefault="true" />
 	<httpServices publishByDefault="true" publishExtensionsByDefault="true"/>
