@@ -5,6 +5,9 @@ services:
     restart: always
     ports:
       - 80:80
-    extra_hosts:
-      - "Serv1C:192.168.1.15"
-
+    #extra_hosts:
+    #  - "Serv1C:192.168.1.15"
+    #
+    # Пробрасываем базу с хоста
+    #volumes:
+    #  - c:/projects/containers/docker-apache-1c/ib/:/var/www/base/
