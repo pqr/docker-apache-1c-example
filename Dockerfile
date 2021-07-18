@@ -18,3 +18,8 @@ COPY httpd.conf /usr/local/apache2/conf/httpd.conf
 
 # Копируем внутрь контейнера заранее подготовленный конфиг с настройками подключения к серверу 1С
 COPY default.vrd /usr/local/apache2/htdocs/BuhBase/default.vrd
+
+# Опционально у нас может быть и вторая информационная база со своим файлом настроке подлючения antother_base.vrd
+# Копируем в отдельную директорию AnotherBuhBase
+# Также нужно настроить эту директорию в фонфиге для Apache: httpd.conf (см пример в этом репозитории)
+# COPY antother_base.vrd /usr/local/apache2/htdocs/AnotherBuhBase/default.vrd
